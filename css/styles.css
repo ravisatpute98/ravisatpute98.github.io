@@ -92,16 +92,11 @@ section {
     max-width: 1200px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: none; /* Hide sections initially */
+    display: none; /* Hide all sections except home */
 }
 
-section:target {
-    display: block; /* Show the section when clicked */
-    margin-top: 80px; /* Avoid being overlapped by fixed nav */
-}
-
-#home {
-    display: flex; /* Always display home section */
+.active-section {
+    display: flex; /* Display home section */
 }
 
 /* Footer */
