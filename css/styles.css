@@ -1,3 +1,24 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+p, ul {
+    margin: 20px;
+    font-size: 16px;
+    line-height: 1.8; /* Improves readability */
+}
+
 /* Navigation Bar Styling */
 nav {
     background-color: #2c3e50;
@@ -13,7 +34,6 @@ nav ul {
     justify-content: center;
     list-style-type: none;
     padding: 0;
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
 }
 
 nav ul li {
@@ -25,27 +45,83 @@ nav ul li a {
     text-decoration: none;
     font-size: 18px;
     padding: 10px 15px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease; /* Add smooth hover transition */
 }
 
 nav ul li a:hover {
-    background-color: #34495e;
+    background-color: #34495e; /* Add hover effect to links */
     border-radius: 5px;
 }
 
-/* Responsive adjustments for smaller screens */
+/* Home Section Styling */
+#home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #e7f3f8;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the content */
+}
+
+.bio {
+    flex: 1;
+    padding-right: 20px; /* Adds some space between bio and image */
+}
+
+.profile {
+    flex: 1;
+    text-align: right; /* Aligns the image to the right */
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Responsive Design for Home Section */
 @media (max-width: 768px) {
-    nav ul {
-        flex-direction: column; /* Stack navigation items vertically */
-        align-items: center;
+    #home {
+        flex-direction: column; /* Stacks bio and image vertically on small screens */
+        text-align: center; /* Center-align text on smaller screens */
+        padding-top: 120px; /* Increase top padding to make the name visible */
     }
 
-    nav ul li {
-        margin: 10px 0; /* Add space between items */
+    .bio {
+        padding-right: 0;
     }
 
-    nav ul li a {
-        font-size: 16px; /* Slightly reduce font size for mobile */
-        padding: 10px 20px; /* Adjust padding */
+    .profile {
+        text-align: center;
+        margin-top: 20px;
     }
 }
+
+/* Section Styling */
+section {
+    padding-top: 80px;  /* Ensures content isn't hidden behind navbar */
+    margin-top: -40px;  /* Compensates for scroll offset caused by padding */
+    padding-bottom: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease; /* Smooth transitions */
+}
+
+.active-section {
+    display: flex; /* Display home section */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #2c3e50;
+    color: white;
+    margin-top: 20px;
+}
+
