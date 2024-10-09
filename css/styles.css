@@ -16,6 +16,7 @@ h1, h2 {
 p, ul {
     margin: 20px;
     font-size: 16px;
+    line-height: 1.8; /* Improves readability */
 }
 
 /* Navigation Bar Styling */
@@ -43,10 +44,13 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease; /* Add smooth hover transition */
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    background-color: #34495e; /* Add hover effect to links */
+    border-radius: 5px;
 }
 
 /* Home Section Styling */
@@ -56,6 +60,8 @@ nav ul li a:hover {
     align-items: center;
     padding: 50px;
     background-color: #e7f3f8;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the content */
 }
 
 .bio {
@@ -75,6 +81,22 @@ nav ul li a:hover {
     object-fit: cover;
 }
 
+/* Responsive Design for Home Section */
+@media (max-width: 768px) {
+    #home {
+        flex-direction: column; /* Stacks bio and image vertically on small screens */
+        text-align: center; /* Center-align text on smaller screens */
+    }
+
+    .bio {
+        padding-right: 0;
+    }
+
+    .profile {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
 
 /* Section Styling */
 section {
@@ -86,6 +108,7 @@ section {
     max-width: 1200px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease; /* Smooth transitions */
 }
 
 .active-section {
@@ -100,8 +123,3 @@ footer {
     color: white;
     margin-top: 20px;
 }
-
-.section {
-  transition: all 0.5s ease;
-}
-
