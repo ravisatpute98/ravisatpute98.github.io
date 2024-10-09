@@ -86,6 +86,7 @@ nav ul li a:hover {
     #home {
         flex-direction: column; /* Stacks bio and image vertically on small screens */
         text-align: center; /* Center-align text on smaller screens */
+        padding-top: 120px; /* Increase top padding to make the name visible */
     }
 
     .bio {
