@@ -51,30 +51,21 @@ nav ul li a:hover {
 
 /* Home Section Styling */
 #home {
-    padding: 50px;
-    background-color: #e7f3f8;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-}
-
-.flex-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 50px;
+    background-color: #e7f3f8;
 }
 
 .bio {
     flex: 1;
-    padding-right: 20px;
+    padding-right: 20px; /* Adds some space between bio and image */
 }
 
 .profile {
     flex: 1;
-    text-align: right;
+    text-align: right; /* Aligns the image to the right */
 }
 
 .profile-img {
@@ -83,6 +74,7 @@ nav ul li a:hover {
     height: 250px;
     object-fit: cover;
 }
+
 
 /* Section Styling */
 section {
