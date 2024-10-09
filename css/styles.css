@@ -58,7 +58,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 150px 50px 50px;
+    padding: 100px 50px 50px;
     background-color: #e7f3f8;
     max-width: 1200px;
     margin: 0 auto; /* Center the content */
