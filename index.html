@@ -21,7 +21,8 @@
     </nav>
 
     <!-- Home Section -->
-    <section id="home" class="flex-container section active-section">
+    <!--<section id="home" class="flex-container section active-section">-->
+    <section id="home" class="section">
         <div class="bio">
             <h1>Ravi Ashok Satpute</h1>
             <p>PhD Candidate in Economics, Indian Institute of Management Calcutta</p>
@@ -84,6 +85,25 @@
         <p>&copy; 2024 Ravi Ashok Satpute</p>
     </footer>
 
+    <script>
+  function showSection(sectionId) {
+    // Hide all sections
+    var sections = document.querySelectorAll('.section');
+    sections.forEach(function(section) {
+      section.style.display = 'none';
+    });
+
+    // Show the selected section
+    document.getElementById(sectionId).style.display = 'block';
+  }
+
+  // Show the home section by default when the page loads
+  window.onload = function() {
+    showSection('home');
+  };
+</script>
+
+    
     <script src="js/scripts.js"></script>
 </body>
 </html>
