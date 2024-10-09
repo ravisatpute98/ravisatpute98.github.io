@@ -69,6 +69,7 @@ nav ul li a:hover {
     flex: 1;
     padding-right: 20px; /* Adds some space between bio and image */
     padding-top: 120px; /* Increase top padding to make the name visible */
+    text-align: center; /* Center-align the entire bio content */
 }
 
 .profile {
