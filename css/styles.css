@@ -86,13 +86,14 @@ nav ul li a:hover {
 
 /* Section Styling */
 section {
-    padding: 20px;
+    padding-top: 80px;  /* Ensures content isn't hidden behind navbar */
+    margin-top: -40px;  /* Compensates for scroll offset caused by padding */
+    padding-bottom: 20px;
     background-color: #fff;
     margin: 20px auto;
     max-width: 1200px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: none; /* Hide all sections except home */
 }
 
 .active-section {
