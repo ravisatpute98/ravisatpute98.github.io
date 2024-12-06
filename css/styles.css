@@ -32,8 +32,7 @@ nav {
 
 nav ul {
     display: flex;
-    /*justify-content: center;*/
-    justify-content: space-around; /* Ensure equal spacing for items */
+    justify-content: center;
     list-style-type: none;
     padding: 0;
 }
@@ -46,7 +45,7 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
     padding: 10px 15px;
     transition: background-color 0.3s ease; /* Add smooth hover transition */
     white-space: nowrap; /* Prevent text wrapping */
