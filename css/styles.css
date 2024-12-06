@@ -27,31 +27,36 @@ nav {
     top: 0;
     width: 100%;
     z-index: 1000;
+    overflow-x: auto; /* Allow horizontal scrolling if necessary */
 }
 
 nav ul {
     display: flex;
-    justify-content: center;
+    /*justify-content: center;*/
+    justify-content: space-around; /* Ensure equal spacing for items */
     list-style-type: none;
     padding: 0;
 }
 
 nav ul li {
-    margin: 0 15px;
+    /*margin: 0 15px;*/
+    margin: 0 10px; /* Reduce spacing between items */
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     padding: 10px 15px;
     transition: background-color 0.3s ease; /* Add smooth hover transition */
+    white-space: nowrap; /* Prevent text wrapping */
 }
 
 nav ul li a:hover {
     background-color: #34495e; /* Add hover effect to links */
     border-radius: 5px;
 }
+
 
 /* Home Section Styling */
 #home {
