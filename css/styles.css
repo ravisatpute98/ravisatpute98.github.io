@@ -56,6 +56,50 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
+/* Navigation bar Styling for smaller screens*/
+@media (max-width: 768px) {
+
+    nav {
+        padding: 5px 0; /* Minimal vertical padding */
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }*/
+
+    nav ul {
+        flex-direction: row;
+        align-items: center;
+        margin: 0;
+        padding: 20px;
+    }
+
+    nav ul li {
+        margin: 2px 5px; /* Minimal spacing between items */
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 5px; /* Minimal padding */
+        font-size: 14px; /* Smaller font */
+        line-height: 1.2; /* Tighter line height */
+    }
+    #home {
+        padding-top: 20px; /* Reduced top padding to be closer to nav bar */
+
+    }
+    .bio {
+        padding-top: 20px; /* Significantly reduced from original 100px */
+        margin-top: 0;
+    }
+    h1 {
+        margin-top: 0; /* Remove any default top margin */
+        padding-top: 0;
+    }
+}
+
+
 
 /* Home Section Styling */
 #home {
