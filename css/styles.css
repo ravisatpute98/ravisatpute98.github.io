@@ -180,3 +180,34 @@ a {
     text-decoration: none;
 }
 
+/* Teaching Section - Card Layout */
+.ta-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 30px 30px;
+}
+.ta-card {
+    background-color: #f9f9f9;
+    border-left: 4px solid #2c3e50;
+    border-radius: 6px;
+    padding: 16px 20px;
+}
+.ta-course {
+    font-size: 17px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+.ta-meta {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 4px;
+}
+.ta-instructor {
+    font-size: 14px;
+    color: #777;
+    font-style: italic;
+}
+
+
